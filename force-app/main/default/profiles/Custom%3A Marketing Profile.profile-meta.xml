@@ -8,17 +8,17 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Expense_Category__c.Expense_Item__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Expense_Category__c.Reimbursable_Percentage__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Expense_Item__c.Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Expense_Item__c.Expense_Category__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
