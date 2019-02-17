@@ -13,6 +13,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Expense_Category__c.Reimbursement_Percentage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Expense_Item__c.Amount__c</field>
         <readable>true</readable>
     </fieldPermissions>
