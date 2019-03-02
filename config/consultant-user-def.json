@@ -1,0 +1,10 @@
+{
+    "LastName": "consultant-bot",
+    "Alias": "cn-user",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Consultant",
+    "generatePassword": true
+  }
