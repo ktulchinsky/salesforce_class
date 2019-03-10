@@ -59,7 +59,7 @@
     </nameField>
     <pluralLabel>Expense Reports</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
     <fields>
         <fullName>Amount__c</fullName>
@@ -72,4 +72,16 @@
         <trackTrending>false</trackTrending>
         <type>Currency</type>
     </fields>
+    <listViews>
+        <fullName>All_Expenses</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Expenses</label>
+    </listViews>
+    <listViews>
+        <fullName>My_expense_reports</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Expense Reports</label>
+    </listViews>
 </CustomObject>
