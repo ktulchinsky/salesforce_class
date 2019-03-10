@@ -5,6 +5,10 @@
     <members>Expense_Tracker</members>
   </types>
   <types>
+    <name>ApexClass</name>
+    <members>ExpenseReportSharingTest</members>
+  </types>
+  <types>
     <name>ContentAsset</name>
     <members>FullSizeRender</members>
   </types>
@@ -34,11 +38,28 @@
     <members>Expense_Report__c.Amount__c</members>
   </types>
   <types>
+    <name>ListView</name>
+    <members>Expense_Report__c.All_Expenses</members>
+    <members>Expense_Report__c.My_expense_reports</members>
+  </types>
+  <types>
+    <name>ProfilePasswordPolicy</name>
+    <members>Consultant_profilePasswordPolicy1550714871304</members>
+    <members>Finance_profilePasswordPolicy1550550980106</members>
+  </types>
+  <types>
+    <name>ProfileSessionSetting</name>
+    <members>Consultant_profileSessionSetting1550714871429</members>
+    <members>Finance_profileSessionSetting1550550980228</members>
+  </types>
+  <types>
     <name>Profile</name>
     <members>Admin</members>
+    <members>Consultant</members>
     <members>Custom%3A Marketing Profile</members>
     <members>Custom%3A Sales Profile</members>
     <members>Custom%3A Support Profile</members>
+    <members>Finance</members>
   </types>
   <types>
     <name>Settings</name>

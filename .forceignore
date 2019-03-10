@@ -7,3 +7,5 @@ package.xml
 
 **/.eslintrc.json
 AppSwitcher.appMenu
+
+expense-tracker.sh
