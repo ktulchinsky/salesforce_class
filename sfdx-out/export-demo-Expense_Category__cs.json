@@ -1,0 +1,44 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Expense_Category__c",
+                "referenceId": "Expense_Category__cRef1"
+            },
+            "Name": "Education",
+            "Reimbursable_Percentage__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Expense_Category__c",
+                "referenceId": "Expense_Category__cRef2"
+            },
+            "Name": "Gas",
+            "Reimbursable_Percentage__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Expense_Category__c",
+                "referenceId": "Expense_Category__cRef3"
+            },
+            "Name": "Travel",
+            "Reimbursable_Percentage__c": 100
+        },
+        {
+            "attributes": {
+                "type": "Expense_Category__c",
+                "referenceId": "Expense_Category__cRef4"
+            },
+            "Name": "Dining",
+            "Reimbursable_Percentage__c": 50
+        },
+        {
+            "attributes": {
+                "type": "Expense_Category__c",
+                "referenceId": "Expense_Category__cRef5"
+            },
+            "Name": "Auto Insurance",
+            "Reimbursable_Percentage__c": 100
+        }
+    ]
+}

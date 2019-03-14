@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Expense_Category__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Expense_Category__cs.json"
+        ]
+    }
+]

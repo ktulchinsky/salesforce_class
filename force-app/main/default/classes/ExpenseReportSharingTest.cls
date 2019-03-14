@@ -37,6 +37,7 @@ private class  ExpenseReportSharingTest {
     static void whenProfileIsConsultantCantGetAllExpenseReports() {
         
         Expense_Report__c anothers = new Expense_Report__c(
+            Id = '1212',
             Name = 'Show me their money',
             Amount__c = 100
         );
@@ -50,6 +51,7 @@ private class  ExpenseReportSharingTest {
 
         System.runAs(user) {
             Expense_Report__c mine = new Expense_Report__c(
+                Id = '1234',
                 Name = 'Show me my money',
                 Amount__c = 500
             );
@@ -62,7 +64,7 @@ private class  ExpenseReportSharingTest {
             ];
             Test.stopTest();
 
-            System.assert(!saved.contains(anothers) , 'can only see my money');
+            System.assert(saved[0].Id == mine.Id, 'can see only my record');
         }
     }
 }

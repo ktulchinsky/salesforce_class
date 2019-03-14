@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percent_Validation</fullName>
+    <active>true</active>
+    <description>reimbursable percent not to exceed 100%</description>
+    <errorConditionFormula>Reimbursable_Percentage__c  &gt;  1.0</errorConditionFormula>
+    <errorDisplayField>Reimbursable_Percentage__c</errorDisplayField>
+    <errorMessage>Reimbursable percent cannot exceed 100%</errorMessage>
+</ValidationRule>
