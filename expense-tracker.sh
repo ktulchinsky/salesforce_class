@@ -10,7 +10,8 @@ if [[ $1 = 'up' ]]; then
     sfdx force:source:push -f
     sfdx force:user:create -f config/consultant-user-def.json
     sfdx force:user:create -f config/finance-user-def.json
-    sfdx force:org:open
+    sfdx force:data:tree:import --targetusername ScratchOrg --plan sfdx-out/export-demo-Expense_Category__c-plan.json
+    sfdx force:org:open -u ScratchOrg
 
 elif [[ $1 = 'test' ]]; then
     sfdx force:org:create -a TestOrg -f config/project-scratch-def.json

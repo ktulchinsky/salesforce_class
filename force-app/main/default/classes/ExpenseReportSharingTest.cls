@@ -62,7 +62,8 @@ private class  ExpenseReportSharingTest {
             ];
             Test.stopTest();
 
-            System.assert(!saved.contains(anothers) , 'can only see my money');
+            System.assertEquals(1, saved.size(), 'only 1 item is saved');
+            System.assertEquals(mine.Id, saved[0].Id, 'can only see my money');
         }
     }
 }

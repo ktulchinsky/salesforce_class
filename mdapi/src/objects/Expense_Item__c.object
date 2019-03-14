@@ -73,6 +73,80 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>CAN</fullName>
+                    <default>false</default>
+                    <label>CAN</label>
+                </value>
+                <value>
+                    <fullName>JPY</fullName>
+                    <default>false</default>
+                    <label>JPY</label>
+                </value>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>false</default>
+                    <label>EUR</label>
+                </value>
+                <value>
+                    <fullName>KYD</fullName>
+                    <default>false</default>
+                    <label>KYD</label>
+                </value>
+                <value>
+                    <fullName>INR</fullName>
+                    <default>false</default>
+                    <label>INR</label>
+                </value>
+                <value>
+                    <fullName>ISK</fullName>
+                    <default>false</default>
+                    <label>ISK</label>
+                </value>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <description>Currency exchange rate</description>
+        <externalId>false</externalId>
+        <label>Exchange_Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Expense_Category__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
