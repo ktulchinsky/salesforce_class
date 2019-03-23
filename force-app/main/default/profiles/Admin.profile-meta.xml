@@ -6,6 +6,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>ExpenseItemTriggerTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ExpenseReportSharingTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -18,6 +22,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Expense_Item__c.Currency__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Expense_Item__c.Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
