@@ -127,6 +127,15 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Date__c</fullName>
+        <description>User can add date item was created</description>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Description__c</fullName>
         <externalId>false</externalId>
         <label>Description</label>
@@ -136,12 +145,13 @@
     </fields>
     <fields>
         <fullName>Exchange_Rate__c</fullName>
+        <defaultValue>0</defaultValue>
         <description>Currency exchange rate</description>
         <externalId>false</externalId>
         <label>Exchange_Rate</label>
         <precision>18</precision>
         <required>false</required>
-        <scale>2</scale>
+        <scale>4</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
@@ -170,5 +180,18 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Reimbursable_amount__c</fullName>
+        <description>Calculated reimbursable amount</description>
+        <externalId>false</externalId>
+        <formula>(Exchange_Rate__c  *  Amount__c)* Expense_Category__r.Reimbursable_Percentage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reimbursable_amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
     </fields>
 </CustomObject>

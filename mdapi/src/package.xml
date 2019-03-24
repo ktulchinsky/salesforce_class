@@ -6,7 +6,10 @@
   </types>
   <types>
     <name>ApexClass</name>
+    <members>ExpenseItemTriggerHandler</members>
+    <members>ExpenseItemTriggerTest</members>
     <members>ExpenseReportSharingTest</members>
+    <members>TriggerHandler</members>
   </types>
   <types>
     <name>ContentAsset</name>
@@ -33,10 +36,12 @@
     <members>Expense_Category__c.Reimbursable_Percentage__c</members>
     <members>Expense_Item__c.Amount__c</members>
     <members>Expense_Item__c.Currency__c</members>
+    <members>Expense_Item__c.Date__c</members>
     <members>Expense_Item__c.Description__c</members>
     <members>Expense_Item__c.Exchange_Rate__c</members>
     <members>Expense_Item__c.Expense_Category__c</members>
     <members>Expense_Item__c.Expense_Report__c</members>
+    <members>Expense_Item__c.Reimbursable_amount__c</members>
     <members>Expense_Report__c.Amount__c</members>
   </types>
   <types>
@@ -76,6 +81,10 @@
     <members>Expense_Category__c</members>
     <members>Expense_Item__c</members>
     <members>Expense_Report__c</members>
+  </types>
+  <types>
+    <name>ApexTrigger</name>
+    <members>ExpenseItemTrigger</members>
   </types>
   <version>45.0</version>
 </Package>
