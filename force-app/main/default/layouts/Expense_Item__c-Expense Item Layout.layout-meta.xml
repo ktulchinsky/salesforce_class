@@ -35,12 +35,12 @@
                 <field>Currency__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Reimbursable_amount__c</field>
+                <behavior>Edit</behavior>
+                <field>Date__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Date__c</field>
+                <field>Reimbursable_amount__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>

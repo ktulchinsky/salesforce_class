@@ -5,8 +5,7 @@ private class  ExpenseReportSharingTest {
     static void whenProfileIsFinanceCanGetAllExpenseReports() {
 
         Expense_Report__c anothers = new Expense_Report__c(
-            Name = 'Show me their money',
-            Amount__c = 100
+            Name = 'Show me their money'
         );
         insert anothers;
         
@@ -18,8 +17,7 @@ private class  ExpenseReportSharingTest {
 
         System.runAs(user) {
             Expense_Report__c mine = new Expense_Report__c(
-                Name = 'Show me my money',
-                Amount__c = 500
+                Name = 'Show me my money'
             );
             insert mine;
 
@@ -37,8 +35,7 @@ private class  ExpenseReportSharingTest {
     static void whenProfileIsConsultantCantGetAllExpenseReports() {
         
         Expense_Report__c anothers = new Expense_Report__c(
-            Name = 'Show me their money',
-            Amount__c = 100
+            Name = 'Show me their money'
         );
         insert anothers;
         
@@ -50,8 +47,7 @@ private class  ExpenseReportSharingTest {
 
         System.runAs(user) {
             Expense_Report__c mine = new Expense_Report__c(
-                Name = 'Show me my money',
-                Amount__c = 500
+                Name = 'Show me my money'
             );
             insert mine;
 
