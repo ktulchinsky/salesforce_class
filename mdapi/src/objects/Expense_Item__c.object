@@ -183,15 +183,13 @@
     </fields>
     <fields>
         <fullName>Reimbursable_amount__c</fullName>
-        <description>Calculated reimbursable amount</description>
         <externalId>false</externalId>
-        <formula>(Exchange_Rate__c  *  Amount__c)* Expense_Category__r.Reimbursable_Percentage__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Reimbursable_amount</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
 </CustomObject>
