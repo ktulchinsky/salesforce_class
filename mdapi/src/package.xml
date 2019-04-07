@@ -84,6 +84,7 @@
   </types>
   <types>
     <name>ApexTrigger</name>
+    <members>ExpenseCategoryTrigger</members>
     <members>ExpenseItemTrigger</members>
   </types>
   <version>45.0</version>

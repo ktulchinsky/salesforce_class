@@ -63,14 +63,14 @@
     <visibility>Public</visibility>
     <fields>
         <fullName>Amount__c</fullName>
-        <description>Amount of expense report</description>
+        <description>sum amount of all expense items</description>
         <externalId>false</externalId>
         <label>Amount</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
+        <summarizedField>Expense_Item__c.Reimbursable_amount__c</summarizedField>
+        <summaryForeignKey>Expense_Item__c.Expense_Report__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
         <trackTrending>false</trackTrending>
-        <type>Currency</type>
+        <type>Summary</type>
     </fields>
     <listViews>
         <fullName>All_Expenses</fullName>
