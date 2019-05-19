@@ -6,7 +6,7 @@ public class ExpenseItemTriggerHandler extends TriggerHandler {
             if (itemObj.Currency__c == 'USD') {
                 itemObj.Exchange_Rate__c = 1;
             } else {
-                itemObj.Exchange_Rate__c = 0;
+                itemObj.Exchange_Rate__c = itemObj.Exchange_Rate__c;
             }
             listToUpdate.add(itemObj);
         }
@@ -25,7 +25,7 @@ public class ExpenseItemTriggerHandler extends TriggerHandler {
         //        Id, 
         //        Reimbursable_Percentage__c 
         //        FROM Expense_Category__c 
-        //        WHERE Id = :itemObj.Expense_Category__c
+        //        WHERE Id = :itemObj.Expense_Category__c  //WHERE Expense_Category__c in :expenseCategoryIds
         //     ];
 
         for (Expense_Item__c itemObj : itemList){
