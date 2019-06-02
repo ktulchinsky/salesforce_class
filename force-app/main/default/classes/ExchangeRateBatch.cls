@@ -1,4 +1,8 @@
-global with sharing class ExchangeRateBatch implements Database.Batchable<sObject>, Database.AllowsCallouts {
+global with sharing class ExchangeRateBatch implements Database.Batchable<sObject>, Database.AllowsCallouts, Schedulable{
+    global void execute(SchedulableContext sc) {
+        ExchangeRateBatch batch = new ExchangeRateBatch(); 
+        database.executebatch(batch);
+    }
 
     private Map<String, Exchange_Rate__c> populateExchangeRates(List<Expense_Item__c> expenseItems) {
         Map<Date, Set<String>> expenseMap = new Map<Date, Set<String>>();
@@ -35,7 +39,7 @@ global with sharing class ExchangeRateBatch implements Database.Batchable<sObjec
             '2019-05-11:GBP' : {},
 
         }*/
-
+        insert allExchangeRates;
         return exchangeRateMap;
     }
 
@@ -52,6 +56,7 @@ global with sharing class ExchangeRateBatch implements Database.Batchable<sObjec
        List<Expense_Item__c> expenseItemsToUpdate = new List<Expense_Item__c>();
 
        for (Expense_Item__c itemObj : scope) {
+           // composite key
            String dateCurrencyKey = itemObj.Date__c + ':' + itemObj.Currency__c;
            Exchange_Rate__c exchangeRate = exchangeRateByDateAndCurrency.get(dateCurrencyKey);
 
